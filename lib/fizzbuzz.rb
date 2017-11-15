@@ -1,6 +1,8 @@
 Integer.class_eval  do
 	def fizzbuzz
-		if self % 3 == 0
+		if self % 3 == 0 and self % 5 == 0
+			'fizzbuzz'
+		elsif self % 3 == 0
 			'fizz'
 		elsif self % 5 == 0
 			'buzz'
